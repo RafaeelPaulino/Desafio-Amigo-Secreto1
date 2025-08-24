@@ -15,7 +15,7 @@ function adicionarAmigo() {
 function atualizarListaAmigos() {
   const lista = document.getElementById("listaAmigos");
   lista.innerHTML = "";
-
+  
   for (let i = 0; i < amigos.length; i++) {
     const item = document.createElement("li");
     item.textContent = `${i + 1} - ${amigos[i]}`;

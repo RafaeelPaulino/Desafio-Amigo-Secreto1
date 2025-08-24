@@ -160,3 +160,34 @@ ul {
 .button-draw:hover {
     background-color: var(--color-button-hover);
 }
+/* Deixar o título fixo */
+.title {
+  position: fixed;
+  top: 80px; /* Espaço abaixo do header se houver */
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(145, 164, 171, 0.8); /* Fundo levemente opaco para legibilidade */
+  padding: 10px 20px;
+  border-radius: 8px;
+  z-index: 1000;
+  text-align: center;
+}
+
+/* Ajustar o container para não ficar por baixo do título fixo */
+.container {
+  margin-top: 180px; /* Deixa espaço para o título fixo */
+  padding-bottom: 80px; /* Para não colar no rodapé */
+}
+
+/* Rodapé fixo */
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #014257;
+  color: #6f848b;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 0.9rem;
+  z-index: 1000;
+}
